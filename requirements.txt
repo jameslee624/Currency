@@ -1,0 +1,6 @@
+fastapi
+requests
+pandas
+selenium
+webdriver-manager
+uvicorn
