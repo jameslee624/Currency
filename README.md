@@ -1,4 +1,4 @@
-# Currency
+# Currency Converter API
 ### Installing
 > 
 ```
