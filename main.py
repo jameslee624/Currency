@@ -33,7 +33,7 @@ async def curriencies(authenticated: bool = Depends(auth_request)):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Not authenticated")
-    df = pd.read_csv("currency_list.csv", index_col='currency_code')
+    df = pd.read_csv("currency_list.csv", index_col='currency_code', encoding='latin-1')
     currency_list = dict()
     for i in df.index:
         idx = df["currency"][i]
